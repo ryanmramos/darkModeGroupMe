@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "My Extension",
+    "version": "1.0",
+    "description": "Chrome extension to add a dark mode to GroupMe in browser",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://web.groupme.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
